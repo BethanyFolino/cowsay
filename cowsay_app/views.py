@@ -14,6 +14,7 @@ def index_view(request):
                 text=data['text']
             )
             sub = subprocess.run(f'cowsay "{cowsays}"', capture_output=True, shell=True).stdout.decode('utf-8').strip()
+            form = WhatDoesTheCowSayForm()
             return render(request, 'index.html', {'form': form, 'subprocess': sub})
     form = WhatDoesTheCowSayForm()
     return render(request, 'index.html', {'form': form})
