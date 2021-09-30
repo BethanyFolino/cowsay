@@ -1,0 +1,2 @@
+# Cowsay
+Cowsay is an app that uses a program called Cowsay to make an image of a cow that looks like it is saying what you typed into the text box and submitted. This was originally a project I made as part of the Kenzie Academy software engineering program. 
